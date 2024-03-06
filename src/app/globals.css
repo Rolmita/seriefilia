@@ -1,0 +1,407 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap') */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Protest+Strike&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/*CABECERA*/
+
+header{
+  display:flex;
+  width: 100%;
+  height:90px;
+  padding:0 20px;
+  justify-content: space-between;
+  background-color: #FCEE21;
+}
+
+header div{
+  margin: 0;
+  text-align: center;
+}
+
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-size:4em;
+  margin:0;
+  font-style: normal;
+  color:white;
+}
+
+.user-img{
+  width: 70px;
+}
+
+.session{
+  background-color: #FCEE21;
+  border: none
+}
+
+/*BARRA DE NAVEGACIÓN*/
+
+nav{
+  display: flex;
+  justify-content:center;
+  padding: 5px;
+  background-color: #000000;
+  width: 100%;
+  height: 40px;
+}
+
+nav div{
+  margin: auto;
+}
+
+nav div a, button {
+  text-align: center;
+  background-color: #B3B3B3;
+  margin-right: 5px;
+  padding:0.4em 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+nav div a:hover, button:hover {
+  background-color: #FCEE21;
+}
+
+nav div a:active, button:active {
+  background-color: #FCEE21;
+  color:#000000;
+}
+
+nav div a:focus, button:focus {
+  background-color: #FCEE21;
+  color:#000000;
+}
+
+/*CONTENIDO*/
+main {
+  margin-bottom: 5%;
+  min-height: 600px;
+}
+.panel{
+  width: 100%;
+}
+
+.principal{
+  width: 100%;
+}
+
+.contenido{
+  margin:auto;
+  width: 80%;
+}
+
+.frase{
+  margin: 20px auto;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.frase p:last-child{
+  color:#FCEE21;
+  text-align: center;
+  font-weight: 900;
+}
+
+.contenido-total{
+  display:flex;
+}
+
+aside{
+  margin:5%;
+  flex: 0 0 20%;
+}
+
+.entrada, .aside-section, .comentario{
+  border: 2px solid #ffee00;
+  padding: 1em;
+}
+
+.entrada{
+  margin-bottom: 5%;
+}
+.aside-section{
+  padding:1em;
+  margin-bottom: 5%;
+  background-color: #ffffff;
+}
+
+.contenido-blog{
+  margin:5% 0 5% 5%;
+  flex:1;
+}
+
+.entradas{
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.titulo,h2{
+  padding: 0.2em;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  margin-bottom: 1em;
+  
+  
+}
+
+h2{
+  text-align: center;
+  background-color: #ffee00;
+  border: 2px solid #ffee00;
+}
+
+p{
+  margin-top: 1em;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aside-section a{
+  text-decoration: none;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 600;
+  color:#000000;
+  margin-bottom: 1em;
+}
+
+.enlace{
+  display:flex;
+  flex-direction: column;
+}
+.enlace ol{
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/*SERIES*/
+
+
+.glosario{
+  background-color: white;
+  color:#ffee00;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  border: none;
+  padding: 2em;
+  
+}
+
+.listado-series h1{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  padding: 0.5em;
+}
+
+.infor{
+  display:flex;
+flex-direction: row;
+margin-bottom: 1em;
+}
+
+.card{
+  border: 2px solid #ffee00;
+  margin-bottom: 5px;
+}
+h2.glosario{
+  margin-bottom: 0;
+}
+.card a{
+  text-decoration: none;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #000000;
+  
+}
+.card a h3{
+  background-color: #ffee00;
+}
+
+.card p{
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+.botones{
+  justify-content: right;
+  padding-right: 0.5em;
+}
+.card-serie{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .formAdmin form{
+  display:flex;
+  flex-direction: column;
+}
+
+.valorarForm{
+  display: flex;
+  flex-direction: column;
+}
+
+a, button{
+  border: none;
+  text-decoration: none;
+  color:black;
+}
+
+/*FOOTER*/ 
+
+footer{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90px;
+  padding:1em;
+  background-color: #ffee00;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-weight: 700;
+}
+
+footer p a{
+  color:#000000;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+ 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+ 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #000000;
+  background-color: none;
+}
+
+.session-close{
+  border: none;
+  background-color: #B3B3B3;
+}
+
+.boton-new{
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.img-button{
+width:25px;
+margin:0;
+padding: 0;
+}
+
+.botones-entrada{
+  display:flex;
+  flex-direction: row;
+}
+
+.botones-entrada button{
+  height: 50px;
+  width: 100%;
+}
+
+.botones-entrada button a{
+  height: 100%;
+  width: 100%;
+}
+
+.comentario{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+h4{
+  font-family: 'Bricolage Grotesque' , sans-serif;
+}
+
+.cabecera-comentario{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-form{
+  width: 50%;
+  display:flex;
+  flex-direction: column;
+  font-family: 'Bricolage Grotesque' , sans-serif;
+  margin:auto;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.user-form div, .user-form-blog .user-form div{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:0.1em;
+  margin-bottom: 0.2em;
+}
+
+.user-form input{
+  padding: 0.2em;
+}
+
+.user-form button{
+  width: 40%;
+  margin:auto;
+  margin-top: 0.5em;
+}
+
+.user-form-blog .user-form{
+  width: 50%;
+}
+
+.drch,.izq{
+width: 50%;
+flex-direction: column !important;
+}
+
+.all, .social-button{
+  width: 100% !important; 
+}
+
+.panel{
+  flex-direction: row !important;
+}

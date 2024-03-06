@@ -1,5 +1,7 @@
 # Aplicación de ejemplo con Next-Auth 5
 
+
+
 ## Referencias 
 
 - https://medium.com/@uriser/authentication-in-next-js-with-auth-js-nextauth-5-b74e3ae18ab8

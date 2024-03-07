@@ -27,7 +27,7 @@ export default async function layoutBlog({ children }) {
                         <h2>Lo más reciente</h2>
                         <div className="enlace">
                             {recentPost.map(r => (
-                                <Link href={`/blog/entradas?id=${r.id}`} key={r.id}>
+                                <Link href={`/blog/entrada?id=${r.id}`} key={r.id}>
                                     {r.nombre}
                                 </Link>
                             ))}
@@ -39,7 +39,7 @@ export default async function layoutBlog({ children }) {
                             <ol>
                                 {/* Por cada serie más votada, una lista de 5 series */}
                                 {bestSeriesE.map((s) => (
-                                    <li key={s.id}><Link href="/blog/serie/">{s.nombre}</Link></li>
+                                    <li key={s.id}><Link href={`/blog/entradas?id=${s.id}`} key={s.id}>{s.nombre}</Link></li>
                                 ))}
                             </ol>
                         </div>
@@ -50,7 +50,7 @@ export default async function layoutBlog({ children }) {
                             <ol>
                                 {/* Por cada serie más votada, una lista de 5 series */}
                                 {bestSeriesF.map((s) => (
-                                    <li key={s.id}><Link href="/blog/serie/">{s.nombre}</Link></li>
+                                    <li key={s.id}><Link href={`/blog/entradas?id=${s.id}`} key={s.id}>{s.nombre}</Link></li>
                                 ))}
                             </ol>
                         </div>

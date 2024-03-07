@@ -24,9 +24,11 @@ async function Post({ post }) {
                     ? <div className="botones-entrada"><button>
                         <Link href={`/blog/entrada/editar?id=${post.id}`}><img className="img-button" src="/editar-texto.png"></img></Link>
                     </button>
-                        <form name='eliminarPost'><input type="hidden" name="eliminarIdPost" value={post.id} /><button formAction={deletePost}>
-                            <img className="img-button" src="/eliminar.png"></img>
-                        </button></form>
+                        <form name='eliminarPost'>
+                            <input type="hidden" name="eliminarIdPost" value={post.id} />
+                            <button formAction={deletePost}>
+                                <img className="img-button" src="/eliminar.png"></img>
+                            </button></form>
                     </div>
                     : ''}
             </div>
@@ -53,7 +55,7 @@ async function Post({ post }) {
                             <h4>{c.autor}</h4>
                             <form name='eliminarComentario'>
                                 <input type="hidden" name="eliminarIdComentario" value={c.id} />
-                                {c.autor == usuario || session.user.role == 'ADMIN'
+                                {c.autor == usuario || (session && session.user.role == 'ADMIN')
                                     ? <button formAction={deleteComentario}>
                                         <img className="img-button" src="/eliminar.png"></img>
                                     </button>

@@ -226,7 +226,7 @@ export async function deleteComentario(formData) {
     const idComentario = Number(formData.get('eliminarIdComentario'))
     try {
         const resultado = await prisma.comentario.delete({
-            where:{
+            where: {
                 id: idComentario
             }
         })

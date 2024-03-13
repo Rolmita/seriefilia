@@ -6,6 +6,7 @@ import { logout } from '@/lib/actions'
 export const metadata = {
   title: "Seriefilia",
   description: "Una página para seriéfilos",
+  manifest: '/manifest.json'
 };
 
 export default async function RootLayout({ children }) {

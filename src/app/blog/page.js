@@ -31,7 +31,7 @@ export default function Blog({ children }) {
           <div className="entrada" key={p.id}>
             <Link href={{ pathname: '/blog/entrada', query: { id: p.id } }}><h1 className="titulo">{p.nombre}</h1></Link>
             <Link href={`/blog/entradas?id=${p.serie?.id}`}><h3><strong>{p.serie?.nombre}</strong></h3></Link>
-            <p style={{ textAlign: 'left' }}>{p.descripcion}</p>
+            <p style={{ textAlign: 'left', whiteSpace: 'pre-wrap', width: '100%' }}>{p.descripcion}</p>
           </div>
         ))}
       </div>
